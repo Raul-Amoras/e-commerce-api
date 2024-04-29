@@ -19,3 +19,46 @@ Content-Type: application/json
   "email": "jonh1@example.com",
   "password": "123456"
 }
+
+###
+
+# @name questions
+POST {{baseUrl}}/questions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmE4YzZlYS02NGJjLTRjNDctOTdiNC0wZTZlODlmZTdlZDAiLCJpYXQiOjE3MTI4MzgxODR9.qpppJQD_5C11828tu3uNIUsJUz4Hv1GE_92wQe-NXUCvgFCPDO7RoA4V4fOODnM7igMwbHll1azssE7WKY2QYqWuNiOfubScsOsLD0PUEnOt2KvISDLBOyvspPQnGa8q1nC45akIfkLOyMrPKGYR_klZ3nn5NhwnAvSb4XK1eUrm8tNMSzN507YRVWjIaUipVC5qDxxqfdT1acDa1yeyHec2B4Gz8zA8WaevlD1P5_B3XXBEXDzK9_8Hm-4TPozBPikXC72Q6XjJySTr_fuH61nAMK77tb8E11nfjpr9wqtDJpfZeqsnG0yl84_XAwLih2At6jD-RWJonbMbaesLQQ
+
+{
+  "title": "Nova pergunta",
+  "content": "Conteúdo da Pergunda"
+}
+
+###
+# @name find all product
+GET https://nest-clean.aa7d567b292385b25bdab454f00b3629.r2.cloudflarestorage.com/421d2a75-a279-4b7e-9e37-3095823d616e-medalha.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=c88d0d2bed517116c18853a206857c93%2F20
+AllowedOrigins: http://localhost:3333
+
+###
+# @name create product
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Asgaard sofa",
+  "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+  "price": 18.5,
+  "categoryId": "f4db46ae-4e5e-4f03-92bc-c3e1d5a06381"
+}
+
+###
+# @name create category
+POST {{baseUrl}}/category
+Content-Type: application/json
+
+{
+  "name": "Bedroom"
+}
+
+###
+# @name find category
+GET {{baseUrl}}/category
+Content-Type: application/json

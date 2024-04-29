@@ -12,7 +12,7 @@ import { PrismaService } from '../prisma/prisma.service'
 import { compare } from 'bcryptjs'
 
 const authenticateBodySchema = z.object({
-  email: z.string(),
+  email: z.string().email(),
   password: z.string(),
 })
 

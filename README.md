@@ -14,3 +14,7 @@ base64 -w 0 public_key.pem > public_key-base64.txt
 
 ### comando docker para subir a aplicação
 docker-compose up -d
+
+### Comando para criar o banco de dados Prisma
+- npx prisma generate
+- pnpm prisma migrate dev
